@@ -5,63 +5,76 @@
       <link href="css/styles.css" rel="stylesheet" type="text/css">
       <script src="js/jquery-3.2.1.js"></script>
       <script src="js/scripts.js"></script>
-      <title>Vacation Suggester</title>
+      <title>Vacation Suggester - Brenda Farrier</title>
     </head>
     <body>
-<!-- Header -->
+<!-- Header -------------------------------------------------------->
         <div class="container">
           <div class="page-header">
-            <h1>Vacation Suggester - Let's Go!</h1>
+            <h1>The Vacation Suggester</h1>
           </div>
         </div>
-<!-- The Questions -->
+<!-- The Survey Questions ------------------------------------------>
         <div class="container">
-          <h3>Please provide some information on your interests, who is going, and how much time you have.</h3>
+          <h3>Choosing where to go on vacation may seem daunting! You want to go somewhere fun and is a good fit for everyone on the trip! Want some help? Simply answer the the following questions and after submitting them you might just discover the perfect vacation!</h3>
           <form>
-            <h2>What time of year will you be traveling?</h2>
-            <select class="form-control" id="1">
+            <h2>What time of year will you be vacationing?</h2>
+            <select class="form-control" id="season">
+              <option value="">Choose your season</optiion>
               <option value="spring">Spring</option>
               <option value="summer">Summer</option>
-              <option value="fall">Fall</option>
+              <option value="autumn">Autumn</option>
               <option value="winter">Winter</option>
             </select>
-            <h2>Just adults or children too?</h2>
-            <input type="radio" name="who" value="adults"> Adults<br>
-  			<input type="radio" name="who" value="family"> Family<br>
-            <h2>Q3: Working in a larger company is fine with me; smaller operations require me to wear too many hats.</h2>
-            <select class="form-control" id="3">
-              <option value="3-yes">Yes</option>
-              <option value="3-no">No</option>
+            <h2>What is your budget?</h2>
+            <select class="form-control" id="budget">
+              <option value="">Choose a budget</optiion>
+              <option value="cheap">Penny pincher</option>
+              <option value="luxury">Only the best</option>
+            </select>
+            <h2>Just adults or the kids too?</h2>
+            <select class="form-control" id="who">
+              <option value="">Choose your travelers</optiion>
+              <option value="adults">Adults</option>
+              <option value="kids">Family</option>
             </select>
   <!-- These questions do not yet factor into the results -------------->
-            <h2>Q4: I like working with prominent clients and long-term projects.  Most of the time, small projects and apps are not for me.</h2>
-            <select class="form-control" id="4">
-              <option value="1">Yes</option>
-              <option value="2">No</option>
+            <h2>What type of vacation are you interested in?</h2>
+            <select class="form-control" id="style">
+              <option value="">Choose your style</optiion>
+              <option value="city">City Tours and museums</option>
+              <option value="outdoor">Outdoor adventure</option>
             </select>
-            <h2>Q5: I enjoy manipulating data and making sure programs run smoothly over worrying about layout or user interface.</h2>
-            <select class="form-control" id="5">
-              <option value="1">Yes</option>
-              <option value="2">No</option>
+            <h2>How much time do you have?</h2>
+            <select class="form-control" id="time">
+              <option value="">Choose a time frame</optiion>
+              <option value="week">One week</option>
+              <option value="more">Two weeks or more</option>
             </select>
-  <!-- Name Field ------------------------------------------------------>
-            <h2>Finally, can we get your first name so we can treat you like a human?</h2>
+  <!-- Name -->
+            <h2>Please tell us your name?</h2>
             <div class="form-group">
               <label for="name"></label>
               <input id="name" class="form-control" type="text">
             </div>
-            <button type="submit" class="btn>" id="btn"> Suggest a Track</button>
+            <button type="submit" class="btn>" id="btn">Show me my vacation!</button>
           </form>
         </div>
-<!-- The hidden text of results ------------------------------->
-        <div class="container" id="c-java">
-          <p>Thanks for your input,<span class="name"></span>.  Given your results, try: C# or Java</p>
+<!-- The hidden vacations -->
+        <div class="container" id="newzealand">
+          <p>Pack your bags! <span class="name"></span>! Based on your answers you might love going to <strong>New Zealand</strong> for a fly, drive, and camp vacation. Explore the incredibly beautiful land where <em>The Lord of the Rings</em>em> was filmed!</p>
         </div>
-        <div class="container" id="php-ruby">
-          <p>Thanks for your input,<span class="name"></span>.  Given your results, try: PHP or Ruby</p>
+        <div class="container" id="wa-dc">
+          <p>Pack your bags <span class="name"></span>! Based on your answers, you might love going to <strong>Washington DC</strong> for a tour of the US Capital and historic monuments!</p>
         </div>
-        <div class="container" id="css-d">
-          <p>Thanks for your input, <span class="name"></span>.  Given your results, try: CSS and Design</p>
+        <div class="container" id="disney">
+          <p>Pack your bags <span class="name"></span>! Based on your answers, you might love going to <strong>Disney World and Epcot Center</strong>! Kids of all ages have a  blast in the enchanted kingdom!</p>
+        </div>
+        <div class="container" id="paris">
+          <p>Pack your bags <span class="name"></span>! Based on your answers you might love going to the city of lights, <strong>Paris, France</strong>. Stroll along the Seine, and visit the many romantic landmarks.</p>
+        </div>
+        <div class="container" id="wyoming">
+          <p>Pack your bags <span class="name"></span>! Based on your answers you might love going to a <strong>Wyoming Dude Ranch</strong>. The horses are saddled and the steaks are on the grill! At sunset you'll gather around the campfire and talk about the adventures of saddle sores, being pestered by giant mosquitos, and falling off your horse. It'll be great!</p>
         </div>
     </body>
   </html>
